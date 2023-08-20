@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.table-striped tbody tr:nth-of-type(odd) td {
+    background: linear-gradient(to right, #4d9559 0%, #38703d 28.53%, #1c5722 75.52%);
+}
+
+.table-striped tbody tr:nth-of-type(even) td {
+    background: linear-gradient(to left, #4d9559 0%, #38703d 28.53%, #1c5722 75.52%);
+}
+
+td {
+    color: white !important;
+}
+
+
+
+.Outer_1 {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(2435.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    padding: 3rem 2rem 2rem 2rem;
+
+}
+
+.Outer_2 {
+
+    height: 85vh;
+    /* border: 1px solid #1e9231; */
+    background: linear-gradient(2435.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-sizing: border-box;
+    border-radius: 7px 100px;
+}
+
+
+.col {
+    padding: 0.5rem;
+    height: 99%;
+    /* border: 1px solid #000; */
+    display: grid;
+    justify-content: center;
+}
+
+.table-container {
+    max-height: 15rem;
+    overflow-y: auto;
+
+    margin-top: 2rem;
+}
+
+h6 {
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+h3{
+    background:linear-gradient(to right, rgb(80, 205, 234), rgb(103, 211, 114) );
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+    /* font-size: 2rem; */
+
+}
+.row1 {
+    height: 200px;
+    ;
+    width: 100%;
+    /* position: relative; */
+
+    background-image: url("./juke/pngegg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.toast-container{
+    left:50%;
+    bottom:3px;
+
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #000; /* Change this to a suitable color */
+}
+
