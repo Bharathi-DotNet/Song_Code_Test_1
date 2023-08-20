@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs</title>
+
+    <link rel="stylesheet" href="./Song.css">
+    <!-- cdn bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="Outer_1">
+        <div class="Outer_2">
+            <center>
+                <h3 style="font-family: 'Oswald', sans-serif;">Kenfra Research - JukeBox</h3>
+            </center>
+            <div class="row">
+                <div class="col col_1 d-grid">
+                    <div class="row -25">
+                        <h4>Welcome To Our Music World</h4>
+                    </div>
+                    <div class="row row1">
+                        <!--This Is Image Div -->
+                    </div>
+
+                    <div class="row mt-2">
+                        <form method="post" action="/add" class="d-grid justify-content-center ">
+                            <input type="text" id="song" name="song" class="form-control ms-0"
+                                placeholder="Your Favourite Song" required autofocus />
+
+                            <button id="btnn" type="button" class="mt-2 btn btn-outline-success">Submit</button>
+                            <div class="toast-container"></div>
+                        </form>
+
+
+                    </div>
+
+                </div>
+                <div class="col col_2">
+
+                    <h4>Songs currently in the queue</h4>
+                    <h6>Count: 14</h6>
+
+                    <div class="table-container">
+                        <table class="table table-striped table-bordered text-center   table-responsive ">
+
+                            <tr>
+                                <th class="bg-success-subtle">Songs</th>
+                            </tr>
+
+                            <tr>
+                                <td>crudles </td>
+                            </tr>
+
+                            <tr>
+                                <td>aurora</td>
+                            </tr>
+
+                            <tr>
+                                <td>peaches</td>
+                            </tr>
+
+                            <tr>
+                                <td>Gangsta&#39;s Paradise</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Kannamma (From &#34;KO, 2&#34;) - Chinmayi</td>
+                            </tr>
+                            <tr>
+                                <td>Kannamma (From &#34;KO, 2&#34;) - Chinmayi</td>
+                            </tr>
+                            <tr>
+                                <td>Kannamma (From &#34;KO, 2&#34;) - Chinmayi</td>
+                            </tr>
+                            <tr>
+                                <td>Kannamma (From &#34;KO, 2&#34;) - Chinmayi</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+      
+            document.getElementById("btnn").addEventListener("click", function () {
+                showToast("Your Song Was Added successfully!");
+            });
+
+            function showToast(message) {
+                const toast = document.createElement("div");
+                toast.className = "toast";
+
+                toast.textContent = message;
+                document.querySelector(".toast-container").appendChild(toast);
+
+                setTimeout(function () {
+                    toast.remove();
+                }, 3000); // Remove the toast after 3 seconds
+            }
+        
+    </script>
+
+</body>
+
+</html>
