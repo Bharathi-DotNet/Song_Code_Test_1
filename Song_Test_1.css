@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
-
+  @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -12,23 +12,35 @@
 }
 
 .table-striped tbody tr:nth-of-type(odd) td {
-    background: linear-gradient(to right, #4d9559 0%, #38703d 28.53%, #1c5722 75.52%);
+    /* background: linear-gradient(to right, #4d9559 0%, #38703d 28.53%, #1c5722 75.52%); */
+
+    /* For Text */
+    background:linear-gradient(289deg, rgba(80, 234, 101, 0.726), rgb(150, 223, 33) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .table-striped tbody tr:nth-of-type(even) td {
     background: linear-gradient(to left, #4d9559 0%, #38703d 28.53%, #1c5722 75.52%);
+        /* For Text */
+        /* background:linear-gradient(to right, rgb(80, 205, 234), rgb(103, 211, 114) );
+        -webkit-background-clip: text;
+        
+        -webkit-text-fill-color: transparent; */
+        color :whitesmoke;
 }
 
 td {
-    color: white !important;
+    
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
 }
-
-
 
 .Outer_1 {
     height: 100vh;
     margin: 0;
     background: linear-gradient(2435.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    /* background-color: #1f1c1c; */
     padding: 3rem 2rem 2rem 2rem;
 
 }
@@ -46,17 +58,17 @@ td {
 
 
 .col {
-    padding: 0.5rem;
+    padding: 1.6rem;
     height: 99%;
     /* border: 1px solid #000; */
     display: grid;
     justify-content: center;
+    /* margin-left: 33px; */
 }
 
 .table-container {
-    max-height: 15rem;
+    max-height: 20rem;
     overflow-y: auto;
-
     margin-top: 2rem;
 }
 
@@ -69,18 +81,13 @@ h6 {
 h3{
     background:linear-gradient(to right, rgb(80, 205, 234), rgb(103, 211, 114) );
     -webkit-background-clip: text;
-    
     -webkit-text-fill-color: transparent;
-    /* font-size: 2rem; */
 
 }
 .row1 {
     height: 200px;
-    ;
-    width: 100%;
-    /* position: relative; */
-
-    background-image: url("./juke/pngegg.png");
+    width: 80%;
+    background-image: url("./pngegg\ \(2\).png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,7 +99,6 @@ h3{
 .toast-container{
     left:50%;
     bottom:3px;
-
 }
 
 .toast {
@@ -107,4 +113,39 @@ h3{
     font-weight: bold;
     background-color: #000; /* Change this to a suitable color */
 }
+/*  */
+.welcome{
+    background:linear-gradient(to right, rgb(80, 205, 234), rgb(103, 211, 114) );
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+}
 
+.col_2>h4{
+    background:linear-gradient(to right, rgb(103, 211, 114) ,rgb(80, 205, 234));
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+}
+.col_2>h6{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: 'Tilt Prism', cursive;
+    
+}
+
+.col-image{
+        /* height: 100px; */
+        /* width: 40%; */
+        /* margin-top: 3rem; */
+        background-image: url("./pngegg\ \(3\).png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        /* border: #38703d; */
+        margin-right: 5rem;
+        /* border: 1px solid #000; */
+
+}

@@ -4,46 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Songs</title>
+    <title>Original</title>
 
-    <link rel="stylesheet" href="./Song.css">
-    <!-- cdn bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
+    <link rel="stylesheet" href="./Song_Test_1.css">
+    <!-- Starting Animation Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--Font Style For Table contents-->
 
 </head>
 
 <body>
     <div class="Outer_1">
-        <div class="Outer_2">
+        <div class="Outer_2 pe-2">
             <center>
                 <h3 style="font-family: 'Oswald', sans-serif;">Kenfra Research - JukeBox</h3>
             </center>
             <div class="row">
-                <div class="col col_1 d-grid">
-                    <div class="row -25">
-                        <h4>Welcome To Our Music World</h4>
+                <div class="col-5 col_1 d-grid p-2">
+                    <div class="row welcome ">
+                        <h4 class="d-flex justify-content-center ">Welcome To Our Music World</h4>
                     </div>
-                    <div class="row row1">
+                    <div class="row row1 mt-2  ms-4">
                         <!--This Is Image Div -->
                     </div>
 
-                    <div class="row mt-2">
+                    <div class="row mt-4">
                         <form method="post" action="/add" class="d-grid justify-content-center ">
                             <input type="text" id="song" name="song" class="form-control ms-0"
-                                placeholder="Your Favourite Song" required autofocus />
+                                placeholder="Enter Your Favourite Song" required autofocus />
 
-                            <button id="btnn" type="button" class="mt-2 btn btn-outline-success">Submit</button>
+                            <button id="btnn" type="button" class="mt-3 btn btn-outline-success">Submit</button>
                             <div class="toast-container"></div>
                         </form>
-
 
                     </div>
 
                 </div>
-                <div class="col col_2">
+                <div class="col col-image mt-4">
+                    <!-- Song Image Div -->
+                </div>
+                <div class="col-5 col_2">
 
                     <h4>Songs currently in the queue</h4>
                     <h6>Count: 14</h6>
@@ -70,8 +70,6 @@
                             <tr>
                                 <td>Gangsta&#39;s Paradise</td>
                             </tr>
-
-
                             <tr>
                                 <td>Kannamma (From &#34;KO, 2&#34;) - Chinmayi</td>
                             </tr>
@@ -93,24 +91,43 @@
         </div>
     </div>
     <script>
-      
-            document.getElementById("btnn").addEventListener("click", function () {
-                showToast("Your Song Was Added successfully!");
-            });
+        //Toast Message 
+        document.getElementById("btnn").addEventListener("click", function () {
+            showToast("Your Song Was Added successfully!");
+        });
 
-            function showToast(message) {
-                const toast = document.createElement("div");
-                toast.className = "toast";
+        function showToast(message) {
+            const toast = document.createElement("div");
+            toast.className = "toast";
 
-                toast.textContent = message;
-                document.querySelector(".toast-container").appendChild(toast);
+            toast.textContent = message;
+            document.querySelector(".toast-container").appendChild(toast);
 
-                setTimeout(function () {
-                    toast.remove();
-                }, 3000); // Remove the toast after 3 seconds
-            }
-        
+            setTimeout(function () {
+                toast.remove();
+            }, 3000); // Remove the toast after 3 seconds
+        }
+
+        //Auto Refresh
+        function refreshPage() {
+            location.reload();
+        }
+        setTimeout(refreshPage, 30000);
+
+
+        // Starting animation(.outer_2)
+        document.addEventListener("DOMContentLoaded", function () {
+            const outer2 = document.querySelector(".Outer_2");
+
+            outer2.classList.add("animate__animated", "animate__slideInRight");
+        });
+
     </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 
 </body>
 
