@@ -1,0 +1,159 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+.table-striped tbody tr:nth-of-type(odd) td {
+    background: linear-gradient(289deg, rgba(80, 234, 101, 0.726), rgb(150, 223, 33) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.table-striped tbody tr:nth-of-type(even) td {
+    background: linear-gradient(to left, #4d9559 0%, #38703d 28.53%, #1c5722 75.52%);
+    color: whitesmoke;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+.Outer_1 {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(2435.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    /* background-color: #1f1c1c; */
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.Outer_2 {
+    height: 85vh;
+    /* border: 1px solid #1e9231; */
+    background: linear-gradient(2435.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-sizing: border-box;
+    border-radius: 7px 100px;
+}
+
+
+.col {
+    padding: 1.6rem;
+    height: 99%;
+    display: grid;
+    justify-content: center;
+}
+
+.table-container {
+    max-height: 20rem;
+    overflow-y: auto;
+    margin-top: 2rem;
+}
+
+h6 {
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+h3 {
+    background: linear-gradient(to right, rgb(80, 205, 234), rgb(103, 211, 114) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Merriweather', serif;
+}
+
+.row1 {
+    height: 200px;
+    width: 80%;
+    background-image: url("../Images/Sound_Box.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+.welcome {
+    /* For Text background  */
+    /* background:linear-gradient(to right, rgb(80, 205, 234), rgb(103, 211, 114) );
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;*/
+
+    font-family: 'Merriweather', serif;
+}
+
+input {
+    background: linear-gradient(2435.59deg, #133917 75.52%, #38703d 28.53%, #133917 75.52%);
+    border: 1px solid rgb(12, 155, 83) !important;
+    color:white !important;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
+.btn {
+    border: 1px solid rgb(12, 155, 83) !important;
+    color: white !important;
+}
+
+input::placeholder {
+    color: white !important;
+}
+
+h4 {
+    background: linear-gradient(to right, rgb(116, 195, 212), rgb(103, 211, 114) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Merriweather', serif;
+}
+
+/* #err{
+    margin-left: 43%;
+    margin-top: .7rem;
+    } */
+
+#err {
+    position: fixed;
+    display: none;
+    position: fixed;
+    padding: .2rem 2rem;
+    background-color: #188b3a6c;
+    color: #fff;
+    border-radius: 1rem;
+    margin-left: 40%;
+    margin-top: .7rem;
+}
+
+
+
+.song {
+    margin-top: .36em;
+}
+
+.col_2 > h6 {
+    background: linear-gradient(to right, rgb(80, 205, 234), rgb(103, 211, 114) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.col-image {
+    background-image: url("../Images/Music.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    margin-right: 5rem;
+}
